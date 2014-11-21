@@ -48,6 +48,7 @@
     <Compile Include="BindingContext.cs" />
     <Compile Include="CompareResult.cs" />
     <Compile Include="Attributes.cs" />
+    <Compile Include="Components.cs" />
     <Compile Include="DependentObservableOptions.cs" />
     <Compile Include="BindingHandler.cs" />
     <Compile Include="KnockoutMapping.cs" />

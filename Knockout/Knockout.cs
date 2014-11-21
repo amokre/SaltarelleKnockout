@@ -52,6 +52,10 @@ namespace KnockoutApi {
             }
         }
 
+        [IntrinsicProperty]
+        [ScriptName("components")]
+        public static Components Components { get { return null; }}
+
         /// <summary>
         /// Sets up bindings using the specified model.
         /// </summary>
