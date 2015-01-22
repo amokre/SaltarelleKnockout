@@ -48,7 +48,11 @@
     <Compile Include="BindingContext.cs" />
     <Compile Include="CompareResult.cs" />
     <Compile Include="Attributes.cs" />
-    <Compile Include="Components.cs" />
+    <Compile Include="Components\ComponentInfo.cs" />
+    <Compile Include="Components\ComponentOptions.cs" />
+    <Compile Include="Components\Components.cs" />
+    <Compile Include="Components\TemplateOptions.cs" />
+    <Compile Include="Components\ViewModelOptions.cs" />
     <Compile Include="DependentObservableOptions.cs" />
     <Compile Include="BindingHandler.cs" />
     <Compile Include="KnockoutMapping.cs" />

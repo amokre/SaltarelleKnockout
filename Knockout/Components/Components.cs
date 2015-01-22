@@ -8,6 +8,7 @@ namespace KnockoutApi
     public class Components
     {
         [ScriptName("register")]
-        public void Register(string componentName, dynamic options) { throw new NotSupportedException(); }
+        [InlineCode("ko.components.register({componentName}, {options})")]
+        public void Register(string componentName, ComponentOptions options) { throw new NotSupportedException(); }
     }
 }
