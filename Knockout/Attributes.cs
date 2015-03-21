@@ -76,7 +76,14 @@ namespace KnockoutApi {
 			setter.ReplaceAttribute(new ScriptNameAttribute("{owner}"));
 			setter.ReplaceAttribute(new DontGenerateAttribute());
 			var prop = attributeStore.AttributesFor(property);
-			prop.ReplaceAttribute(new CustomInitializationAttribute("{$KnockoutApi.Knockout}.observable({value})"));
+            if (property.ReturnType.Name == "List")
+            {
+                prop.ReplaceAttribute(new CustomInitializationAttribute("{$KnockoutApi.Knockout}.observableArray({value})"));
+            }
+            else
+            {
+                prop.ReplaceAttribute(new CustomInitializationAttribute("{$KnockoutApi.Knockout}.observable({value})"));
+            }
 			prop.ReplaceAttribute(new BackingFieldNameAttribute("{owner}"));
 		}
 #endif
